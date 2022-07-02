@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Arcade coin counter</title>
+</head>
+
+    
+    <body>
+        <h1><span>Game Session Coins</span></h1>
+       
+       
+        <table border="1" width="200" height="200">
+       <thead>
+           <tr>
+               <td>GAME</td>
+               <td align="center">PRICE(coins)</td>
+           </tr>
+       </thead>    
+        <tr>
+            <td>Arcade</td>
+            <td align="center">20</td>
+            </tr>
+            <tr>
+            <td>pinball</td>
+            <td align="center">45</td>
+            </tr>
+       
+           
+        </table>
+       
+        <div style="text-align:center">
+      
+        
+         <button id="mybutton">Arcade</button>
+         <button id="btn">PINBALL</button>
+         </div>
+    
+    <p id="describe">To play, click reload to enter coins in field then click restart.select arcade or pinball to play.Reload again at 0 coin</p>
+    
+    <div style="text-align:center">
+    <button id="Btnclick" required>reload</button>
+    </div>
+    
+    <div id="amount">
+        <label for="coin">load coins</label>
+        <input id="coin" type="alphanumeric" name="coin" required>
+    </div>
+    
+    <div style="text-align:center">
+    <button id="submit">restart</button>
+    </div>
+           
+        </body>
+        <script>
+        //IIFE
+       
+        var coin= (function(coin){
+       
+       
+      
+      
+       var button=document.getElementById ("Btnclick")   
+      document.getElementById("Btnclick").addEventListener("click",ResetCredit)
+      function ResetCredit() {
+    //Base reference
+    coin=Number(document.getElementById("coin").value)
+         alert(`load coins`)
+        
+        }
+    
+    var submit=document.getElementById("submit")   
+        document.getElementById("submit").addEventListener ("click",Restart)
+        function Restart(){
+        coin=Number(document.getElementById("coin").value)
+       
+            alert(`click any game to restart`)
+        }
+    
+    //private data for Arcade
+    var mybutton=document.getElementById("mybutton")
+    var mybutton=document.getElementById("mybutton").addEventListener ("click",PlayArcade)
+         function PlayArcade(){
+         //manipulator
+             coin-=20
+             alert(`Booked one session of Arcade,current coin(s) is : ${coin}`)
+      if (coin<=0){alert("GAME OVER !! 0 coin remaining")}    
+         }
+    
+    // private data for pinball
+    var btn=document.getElementById("btn")
+    var btn=document.getElementById("btn").addEventListener ("click",PLAYPINBALL)
+    function PLAYPINBALL(){
+    //manipulator
+        coin-=45
+        alert(`Booked one session of PINBALL,current coin(s) is: ${coin}`)
+        if (coin<=0){alert("GAME OVER !! 0 coin remaining")}
+       }
+      
+           
+           
+           })()//IIFE call
+       
+           
+           
+           
+           
+           
+        </script>
+       
+       
+           
+       
+    </html>

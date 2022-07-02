@@ -1,0 +1,58 @@
+body {
+    background-color:Black; 
+    display: grid;
+  }
+  table{ margin-right:auto;
+         margin-left:auto;
+     
+  }
+  h1{
+      color:darkorange;
+      text-align:center;
+  }
+  table {
+      background-color:orange;
+  }
+  p{
+      text-align:center;
+      color:khaki;
+  }
+  strong{
+      text-align:center;
+  }
+  Btnclick{
+      margin-right:auto;
+         margin-left:auto;
+     
+  }
+  mybutton{
+      margin-right:auto;
+         margin-left:auto;
+     
+  }
+  btn{
+      margin-right:auto;
+         margin-left:auto;
+     
+  }
+  #describe{
+      color:Goldenrod;
+  }
+  
+  #coin{
+      color:red;
+      position: relative;
+      right: 45px;
+  }
+  #amount{
+    justify-self: center;
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  #submit{
+    margin-top: 25px;
+
+  }
+  
+  
