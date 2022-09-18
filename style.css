@@ -23,16 +23,19 @@ body {
   #Btnclick{
       margin-right:auto;
          margin-left:auto;
+
      
   }
   #mybutton{
       margin-right:auto;
          margin-left:auto;
+Margin-top:10px;
      
   }
   #btn{
       margin-right:auto;
          margin-left:auto;
+Margin-top:10px;
      
   }
   #describe{
@@ -54,6 +57,9 @@ body {
     margin-top: 25px;
 
   }
+button{
+background-color:orange;
+}
 
 
   
