@@ -56,48 +56,54 @@
            
         </body>
         <script>
-        //IIFE
        
-        var coin= (function(coin){
+ //IIFE:Encapsulate our code
+       
+     var coin= (function(coin){
        
        
       
-      
+      /*Code for reload button*/
        var button=document.getElementById ("Btnclick")   
       document.getElementById("Btnclick").addEventListener("click",ResetCredit)
       function ResetCredit() {
     //Base reference
-    coin=Number(document.getElementById("coin").value)
-         alert(`load coins`)
+    coin=Number(document.getElementById("coin").value) //parse from string to button
+         alert(`load coins`) //message pops up when button is clicked
         
         }
     
-    var submit=document.getElementById("submit")   
+  /*Code for restart button*/
+  var submit=document.getElementById("submit")   
         document.getElementById("submit").addEventListener ("click",Restart)
         function Restart(){
         coin=Number(document.getElementById("coin").value)
        
-            alert(`click any game to restart`)
+            alert(`click any game to restart`) //message pops up when clicked
         }
     
-    //private data for Arcade
+    //private data for Arcade button
     var mybutton=document.getElementById("mybutton")
     var mybutton=document.getElementById("mybutton").addEventListener ("click",PlayArcade)
          function PlayArcade(){
-         //manipulator
+         //manipulator:amount of coins deducted when button is clicked
              coin-=20
              alert(`Booked one session of Arcade,current coin(s) is : ${coin}`)
-      if (coin<=0){alert("GAME OVER !! 0 coin remaining")}    
+      if (coin<=0){
+alert("GAME OVER !! 0 coin remaining")
+}    
          }
     
-    // private data for pinball
+    // private data for pinball button
     var btn=document.getElementById("btn")
     var btn=document.getElementById("btn").addEventListener ("click",PLAYPINBALL)
     function PLAYPINBALL(){
-    //manipulator
+    //manipulator:amount of coins deducted when pinball is clicked
         coin-=45
         alert(`Booked one session of PINBALL,current coin(s) is: ${coin}`)
-        if (coin<=0){alert("GAME OVER !! 0 coin remaining")}
+        if (coin<=0){
+alert("GAME OVER !! 0 coin remaining")
+}
        }
       
            
