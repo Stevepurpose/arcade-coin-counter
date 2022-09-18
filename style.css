@@ -20,17 +20,17 @@ body {
   strong{
       text-align:center;
   }
-  Btnclick{
+  #Btnclick{
       margin-right:auto;
          margin-left:auto;
      
   }
-  mybutton{
+  #mybutton{
       margin-right:auto;
          margin-left:auto;
      
   }
-  btn{
+  #btn{
       margin-right:auto;
          margin-left:auto;
      
@@ -54,5 +54,7 @@ body {
     margin-top: 25px;
 
   }
+
+
   
   
