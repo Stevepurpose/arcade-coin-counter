@@ -43,9 +43,10 @@ Margin-top:10px;
   }
   
   #coin{
-      color:red;
+      color:white;
       position: relative;
       right: 45px;
+font-size:20px;
   }
   #amount{
     justify-self: center;
